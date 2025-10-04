@@ -66,7 +66,7 @@ Metrics
 GET /api/v1/metrics - Get city metrics
 GET /api/v1/metrics/summary - Get metrics summary
 
-##💡 Example Usage
+## 💡 Example Usage
 Create a new sensor
 ```python
 import requests
@@ -95,7 +95,7 @@ response = requests.post("http://localhost:8000/api/v1/readings", json=reading_d
 print(response.json())
 ```
 
-##🏗️ Project Structure
+## 🏗️ Project Structure
 ```bash
 smart-cities-api/
 │
@@ -105,7 +105,7 @@ smart-cities-api/
 └── .gitignore          # Git ignore file
 ```
 
-##🎯 Use Cases
+## 🎯 Use Cases
 
 IoT Integration: Connect city sensors and devices
 Urban Monitoring: Track environmental conditions
@@ -113,7 +113,7 @@ Data Analytics: Analyze city patterns and trends
 Smart City Dashboards: Backend for visualization tools
 Research Projects: Academic urban studies
 
-##📊 Sensor Types Supported
+## 📊 Sensor Types Supported
 
 Temperature sensors
 Humidity monitors
@@ -123,24 +123,24 @@ Traffic flow counters
 Parking availability
 Energy consumption meters
 
-##🔮 Future Enhancements
+## 🔮 Future Enhancements
 
- Database integration (PostgreSQL/MongoDB)
- Authentication & authorization
- WebSocket support for real-time updates
- Data export (CSV/JSON/Excel)
- Advanced analytics endpoints
- Rate limiting
- Docker containerization
+- [ ] Database integration (PostgreSQL/MongoDB)
+- [ ] Authentication & authorization
+- [ ] WebSocket support for real-time updates
+- [ ] Data export (CSV/JSON/Excel)
+- [ ] Advanced analytics endpoints
+- [ ] Rate limiting
+- [ ] Docker containerization
 
-##👨‍💻 Author
+## 👨‍💻 Author
 **Arnau Ropero**
 
 Smart Cities Engineering Student at UAB
-GitHub: @arnauropero
-LinkedIn: arnau-ropero-garcia
+- GitHub: [@arnauropero](https://github.com/arnauropero)
+- LinkedIn: [arnau-ropero-garcia](https://linkedin.com/in/arnau-ropero-garcia)
 
-##📝 License
+## 📝 License
 MIT License
 
 
