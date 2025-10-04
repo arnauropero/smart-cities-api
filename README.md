@@ -1,34 +1,46 @@
-🚀 Smart Cities Data API
+# 🚀 Smart Cities Data API
+
 RESTful API built with FastAPI for managing smart city sensor data and urban metrics.
-📋 Overview
+
+## 📋 Overview
+
 A modern REST API designed for Smart Cities applications, providing endpoints to manage IoT sensors, collect readings, and analyze urban metrics. Built with FastAPI for high performance and automatic API documentation.
-✨ Features
 
-Complete CRUD operations for sensor management
-Real-time sensor readings collection and storage
-City metrics aggregation for data analysis
-Automatic API documentation with Swagger/OpenAPI
-Data validation using Pydantic models
-CORS enabled for web application integration
-Type hints throughout the codebase
+## ✨ Features
 
-🛠️ Tech Stack
+- **Complete CRUD operations** for sensor management
+- **Real-time sensor readings** collection and storage
+- **City metrics aggregation** for data analysis
+- **Automatic API documentation** with Swagger/OpenAPI
+- **Data validation** using Pydantic models
+- **CORS enabled** for web application integration
+- **Type hints** throughout the codebase
 
-FastAPI - Modern, fast web framework for building APIs
-Pydantic - Data validation using Python type annotations
-Uvicorn - Lightning-fast ASGI server
-Python 3.7+ - Type hints and async support
+## 🛠️ Tech Stack
 
-🚀 Quick Start
-Installation
-bashgit clone https://github.com/arnauropero/smart-cities-api.git
+- **FastAPI** - Modern, fast web framework for building APIs
+- **Pydantic** - Data validation using Python type annotations
+- **Uvicorn** - Lightning-fast ASGI server
+- **Python 3.7+** - Type hints and async support
+
+## 🚀 Quick Start
+
+### Installation
+```bash
+git clone https://github.com/arnauropero/smart-cities-api.git
 cd smart-cities-api
 pip install -r requirements.txt
+```
 Run the API
-bashpython main.py
+```bash
+python main.py
+```
 Or with Uvicorn directly:
-bashuvicorn main:app --reload
+```bash
+uvicorn main:app --reload
+```
 The API will be available at http://localhost:8000
+
 📚 API Documentation
 Once running, visit:
 
@@ -56,7 +68,8 @@ GET /api/v1/metrics/summary - Get metrics summary
 
 💡 Example Usage
 Create a new sensor
-pythonimport requests
+```python
+import requests
 
 sensor_data = {
     "name": "Temperature Sensor Park Güell",
@@ -69,8 +82,10 @@ sensor_data = {
 
 response = requests.post("http://localhost:8000/api/v1/sensors", json=sensor_data)
 print(response.json())
+```
 Submit a reading
-pythonreading_data = {
+```python
+reading_data = {
     "sensor_id": 1,
     "value": 23.5,
     "unit": "°C"
@@ -78,13 +93,18 @@ pythonreading_data = {
 
 response = requests.post("http://localhost:8000/api/v1/readings", json=reading_data)
 print(response.json())
+```
+
 🏗️ Project Structure
+```bash
 smart-cities-api/
 │
 ├── main.py              # FastAPI application
 ├── requirements.txt     # Project dependencies
 ├── README.md           # Documentation
 └── .gitignore          # Git ignore file
+```
+
 🎯 Use Cases
 
 IoT Integration: Connect city sensors and devices
@@ -122,3 +142,5 @@ LinkedIn: arnau-ropero-garcia
 
 📝 License
 MIT License
+
+
