@@ -27,14 +27,15 @@ A modern REST API designed for Smart Cities applications, providing endpoints to
 
 ### Installation
 ```bash
+git clone https://github.com/arnauropero/smart-cities-api.git
+cd smart-cities-api
+pip install -r requirements.txt
 
 Run the API
-python main.py
+bashpython main.py
 Or with Uvicorn directly:
-uvicorn main:app --reload
-
+bashuvicorn main:app --reload
 The API will be available at http://localhost:8000
-
 📚 API Documentation
 Once running, visit:
 
@@ -62,7 +63,7 @@ GET /api/v1/metrics/summary - Get metrics summary
 
 💡 Example Usage
 Create a new sensor
-import requests
+pythonimport requests
 
 sensor_data = {
     "name": "Temperature Sensor Park Güell",
@@ -76,7 +77,7 @@ sensor_data = {
 response = requests.post("http://localhost:8000/api/v1/sensors", json=sensor_data)
 print(response.json())
 Submit a reading
-reading_data = {
+pythonreading_data = {
     "sensor_id": 1,
     "value": 23.5,
     "unit": "°C"
@@ -84,7 +85,6 @@ reading_data = {
 
 response = requests.post("http://localhost:8000/api/v1/readings", json=reading_data)
 print(response.json())
-
 🏗️ Project Structure
 smart-cities-api/
 │
@@ -92,7 +92,6 @@ smart-cities-api/
 ├── requirements.txt     # Project dependencies
 ├── README.md           # Documentation
 └── .gitignore          # Git ignore file
-
 🎯 Use Cases
 
 IoT Integration: Connect city sensors and devices
@@ -130,7 +129,3 @@ LinkedIn: arnau-ropero-garcia
 
 📝 License
 MIT License
-
-git clone https://github.com/arnauropero/smart-cities-api.git
-cd smart-cities-api
-pip install -r requirements.txt
