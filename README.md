@@ -41,7 +41,7 @@ uvicorn main:app --reload
 ```
 The API will be available at http://localhost:8000
 
-##📚 API Documentation
+## 📚 API Documentation
 Once running, visit:
 
 Swagger UI: http://localhost:8000/docs
