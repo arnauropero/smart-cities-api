@@ -41,7 +41,7 @@ uvicorn main:app --reload
 ```
 The API will be available at http://localhost:8000
 
-📚 API Documentation
+##📚 API Documentation
 Once running, visit:
 
 Swagger UI: http://localhost:8000/docs
@@ -66,7 +66,7 @@ Metrics
 GET /api/v1/metrics - Get city metrics
 GET /api/v1/metrics/summary - Get metrics summary
 
-💡 Example Usage
+##💡 Example Usage
 Create a new sensor
 ```python
 import requests
@@ -95,7 +95,7 @@ response = requests.post("http://localhost:8000/api/v1/readings", json=reading_d
 print(response.json())
 ```
 
-🏗️ Project Structure
+##🏗️ Project Structure
 ```bash
 smart-cities-api/
 │
@@ -105,7 +105,7 @@ smart-cities-api/
 └── .gitignore          # Git ignore file
 ```
 
-🎯 Use Cases
+##🎯 Use Cases
 
 IoT Integration: Connect city sensors and devices
 Urban Monitoring: Track environmental conditions
@@ -113,7 +113,7 @@ Data Analytics: Analyze city patterns and trends
 Smart City Dashboards: Backend for visualization tools
 Research Projects: Academic urban studies
 
-📊 Sensor Types Supported
+##📊 Sensor Types Supported
 
 Temperature sensors
 Humidity monitors
@@ -123,7 +123,7 @@ Traffic flow counters
 Parking availability
 Energy consumption meters
 
-🔮 Future Enhancements
+##🔮 Future Enhancements
 
  Database integration (PostgreSQL/MongoDB)
  Authentication & authorization
@@ -133,14 +133,14 @@ Energy consumption meters
  Rate limiting
  Docker containerization
 
-👨‍💻 Author
-Arnau Ropero
+##👨‍💻 Author
+**Arnau Ropero**
 
 Smart Cities Engineering Student at UAB
 GitHub: @arnauropero
 LinkedIn: arnau-ropero-garcia
 
-📝 License
+##📝 License
 MIT License
 
 
