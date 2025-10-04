@@ -42,29 +42,27 @@ uvicorn main:app --reload
 The API will be available at http://localhost:8000
 
 ## 📚 API Documentation
+
 Once running, visit:
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
 
-Swagger UI: http://localhost:8000/docs
-ReDoc: http://localhost:8000/redoc
+## 🔌 API Endpoints
 
-🔌 API Endpoints
-Sensors
+### Sensors
+- `GET /api/v1/sensors` - List all sensors
+- `GET /api/v1/sensors/{id}` - Get specific sensor
+- `POST /api/v1/sensors` - Create new sensor
+- `PUT /api/v1/sensors/{id}` - Update sensor
+- `DELETE /api/v1/sensors/{id}` - Delete sensor
 
-GET /api/v1/sensors - List all sensors
-GET /api/v1/sensors/{id} - Get specific sensor
-POST /api/v1/sensors - Create new sensor
-PUT /api/v1/sensors/{id} - Update sensor
-DELETE /api/v1/sensors/{id} - Delete sensor
+### Readings
+- `POST /api/v1/readings` - Submit sensor reading
+- `GET /api/v1/readings/{sensor_id}` - Get sensor readings
 
-Readings
-
-POST /api/v1/readings - Submit sensor reading
-GET /api/v1/readings/{sensor_id} - Get sensor readings
-
-Metrics
-
-GET /api/v1/metrics - Get city metrics
-GET /api/v1/metrics/summary - Get metrics summary
+### Metrics
+- `GET /api/v1/metrics` - Get city metrics
+- `GET /api/v1/metrics/summary` - Get metrics summary
 
 ## 💡 Example Usage
 Create a new sensor
