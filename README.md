@@ -1,36 +1,29 @@
-# 🚀 Smart Cities Data API
-
+🚀 Smart Cities Data API
 RESTful API built with FastAPI for managing smart city sensor data and urban metrics.
-
-## 📋 Overview
-
+📋 Overview
 A modern REST API designed for Smart Cities applications, providing endpoints to manage IoT sensors, collect readings, and analyze urban metrics. Built with FastAPI for high performance and automatic API documentation.
+✨ Features
 
-## ✨ Features
+Complete CRUD operations for sensor management
+Real-time sensor readings collection and storage
+City metrics aggregation for data analysis
+Automatic API documentation with Swagger/OpenAPI
+Data validation using Pydantic models
+CORS enabled for web application integration
+Type hints throughout the codebase
 
-- **Complete CRUD operations** for sensor management
-- **Real-time sensor readings** collection and storage
-- **City metrics aggregation** for data analysis
-- **Automatic API documentation** with Swagger/OpenAPI
-- **Data validation** using Pydantic models
-- **CORS enabled** for web application integration
-- **Type hints** throughout the codebase
+🛠️ Tech Stack
 
-## 🛠️ Tech Stack
+FastAPI - Modern, fast web framework for building APIs
+Pydantic - Data validation using Python type annotations
+Uvicorn - Lightning-fast ASGI server
+Python 3.7+ - Type hints and async support
 
-- **FastAPI** - Modern, fast web framework for building APIs
-- **Pydantic** - Data validation using Python type annotations
-- **Uvicorn** - Lightning-fast ASGI server
-- **Python 3.7+** - Type hints and async support
-
-## 🚀 Quick Start
-
-### Installation
-```bash
-git clone https://github.com/arnauropero/smart-cities-api.git
+🚀 Quick Start
+Installation
+bashgit clone https://github.com/arnauropero/smart-cities-api.git
 cd smart-cities-api
 pip install -r requirements.txt
-
 Run the API
 bashpython main.py
 Or with Uvicorn directly:
